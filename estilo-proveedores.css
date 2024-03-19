@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+  }
+  
+  header {
+    background-color: #038bbb;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .logo-link {
+    margin-right: auto; 
+}
+
+.logo {
+    width: 150px; 
+    height: auto;
+}
+
+  h1 {
+    margin: 0;
+    margin-left: auto;
+    margin-right: 450px;
+  }
+  
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .proveedor {
+    margin: 20px;
+    text-align: center;
+    transition: transform 0.8s ease;
+    flex: 0 0 calc(33.33% - 40px);
+  }
+  
+  .proveedor:hover {
+    transform: scale(1.1);
+  }
+  
+  .proveedor img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .proveedor h2 {
+    margin-top: 10px;
+    color: #333;
+  }
