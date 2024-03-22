@@ -25,31 +25,6 @@ menuToggler.addEventListener("click", function () {
 });
 
 
-var cuadros = document.querySelectorAll('.cuadro');
-var contenedor = document.querySelector('.contenedor');
-var distanciaSesion = 300; // Puedes ajustar esta distancia según tus necesidades
 
-var manejarVisibilidadCuadros = () => {
-    var distanciaDesdeTop = contenedor.getBoundingClientRect().top;
-    var distanciaDesdeAbajo = window.innerHeight - contenedor.getBoundingClientRect().bottom;
-
-    cuadros.forEach(cuadro => {
-        var cuadroPosicion = cuadro.getBoundingClientRect().top;
-
-        if (cuadroPosicion < window.innerHeight - distanciaSesion && cuadroPosicion > -cuadro.clientHeight) {
-            cuadro.classList.remove('oculto');
-            cuadro.style.opacity = '1';
-        } else {
-            cuadro.classList.add('oculto');
-            cuadro.style.opacity = '0';
-        }
-    });
-};
-
-// Ejecutar al cargar la página
-manejarVisibilidadCuadros();
-
-// Agregar evento de desplazamiento
-window.addEventListener('scroll', manejarVisibilidadCuadros);
 
 

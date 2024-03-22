@@ -25,13 +25,13 @@
       <div class="header-content">
         <div class="logo">
           <a href="#" id="logo">
-            <img src="images/Logo con fondo.png" alt="Logo de la empresa">
-        </a>
-        <script>
-          document.getElementById('logo').addEventListener('click', function() {
+            <img src="images/Imagen1.png" alt="Logo de la empresa">
+          </a>
+          <script>
+            document.getElementById('logo').addEventListener('click', function() {
               window.scrollTo({ top: 0, behavior: 'smooth' });
-          });
-      </script>
+            });
+          </script>
         </div>
         <div class="mobile-menu">
           <div class="line1"></div>
@@ -39,17 +39,40 @@
           <div class="line3"></div>
         </div>
         <nav class="nav">
-          <ul >
-            <li class="nav-links"><a href="#home">Quienes somos</a></li>
-            <li class="nav-links"><a href="#services">Servicios</a></li>
-            <li class="nav-links"><a href="#funciones">Funciones</a></li>
-            <li class="nav-links"><a href="#about">Talento humano</a></li>
-            <li class="nav-links"><a href="#projects">Proyectos</a></li>
-            <li class="nav-links"><a href="#contact">Contacto</a></li>
+          <ul>
+              <li class="nav-links"><a href="#home">Quiénes Somos</a></li>
+              <li class="nav-links"><a href="#services">Servicios</a></li>
+              <li class="nav-links"><a href="#funciones">Funciones</a></li>
+              <li class="nav-links"><a href="#projects">Proyectos</a></li>
+              <li class="nav-links"><a href="#contact">Contacto</a></li>
+              <li class="nav-links dropdown-container">
+                  <a class="dropdown-toggle">Más Información</a>  
+                  <div class="dropdown-menu">
+                      <a href="pagina-de-proveedores.html">Proveedores</a>
+                      <a href="pagina-de-clientes.html">Clientes</a>
+                      <hr class="dropdown-divider">
+                      <a href="#about">Talento&nbsp;Humano</a>
+                  </div>
+              </li>
           </ul>
-        </nav>
+      </nav>
       </div>
+      <script>
+        let lastScrollTop = 0;
+  
+        window.addEventListener("scroll", function () {
+          let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+          const isScrollingDown = currentScroll > lastScrollTop;
+          const targetTop = isScrollingDown ? "-125px" : "0px";
+          document.querySelector("header.header").style.transition = "top 1s ease-in-out";
+          document.querySelector("header.header").style.top = targetTop;
+          lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+        });
+  
+      </script>
     </header>
+
+  
     <main class="main">
 
 
@@ -59,19 +82,19 @@
           <div class="carousel-item active">
             <img src="images/content (2) (4).jpg" class="d-block w-100" alt="">
             <div class="carousel-caption">
-              <h2>Desarrollamos Soluciones Telco Efectivas.</h2><h5>Teamco Consulting SAS</h5>
+              <h2>Desarrollamos Soluciones Telco Efectivas.</h2><h5>Teamco Consulting S.A.S</h5>
             </div>
           </div>
           <div class="carousel-item">
             <img src="images/CAmioneta 1.jpg" class="d-block w-100" alt="">
             <div class="carousel-caption">
-              <h2>Ingeniería de Vanguardia para Desafíos Actuales: Más Allá de las Expectativas.</h2><h5>Teamco Consulting SAS</h5>
+              <h2>Ingeniería de Vanguardia para Desafíos Actuales: Más Allá de las Expectativas.</h2><h5>Teamco Consulting S.A.S</h5>
             </div>
           </div>
           <div class="carousel-item">
             <img src="images/para slider 2.jpg" class="d-block w-100" alt="">
             <div class="carousel-caption">
-              <h2>Innovación en Conectividad: Diseñamos el Futuro de las Comunicaciones.</h2><h5>Teamco Consulting SAS</h5>
+              <h2>Innovación en Conectividad: Diseñamos el Futuro de las Comunicaciones.</h2><h5>Teamco Consulting S.A.S</h5>
             </div>
           </div>
         </div>
@@ -125,7 +148,7 @@
                 </div>
                 <div class="service-text">
                   <h2>Despliegue de red</h2>
-                  <p> ° Búsqueda de sitios.<br> ° Negociación de predios.<br> ° Site survey.<br> ° Instalación de equipos.<br> ° comisionamiento.<br> ° Pruebas de validación.<br> ° Gerencia de proyectos.<br> ° seguimiento a aceptación.<br> ° Interventoría de instalación.</p>
+                  <p> ° Búsqueda de sitios.<br> ° Negociación de predios.<br> ° Site survey.<br> ° Instalación de equipos.<br> ° comisionamiento.<br> ° Pruebas de validación.<br> ° Gerencia de proyectos.<br> ° Seguimiento a aceptación.<br> ° Interventoría de instalación.</p>
                 </div>
               </div>
             </a>
@@ -136,7 +159,7 @@
                 </div>
                 <div class="service-text">
                   <h2>Mejora de desempeño</h2>
-                  <p> ° Initial tunning.<br> ° Optimización de red.<br> ° Benchmarking.<br> ° Drive / Walk test.<br> ° Correlación KPI / parámetros.<br> ° Planes de mejora.<br> ° Lista de ofensores / alarmas / VIP.<br> ° Outsourcing de ingenería.<br> ° Cambios físicos.</p>
+                  <p> ° Initial tunning.<br> ° Optimización de red.<br> ° Benchmarking.<br> ° Drive / Walk test.<br> ° Correlación KPI / parámetros.<br> ° Planes de mejora.<br> ° Lista de ofensores / alarmas / VIP.<br> ° Outsourcing de ingeniería.<br> ° Cambios físicos.</p>
                 </div>
               </div>
             </a>
@@ -147,7 +170,7 @@
                 </div>
                 <div class="service-text">
                   <h2>Consultoría y auditoría de red</h2>
-                  <p> ° Auditoría de red y procesos.<br> ° Análisis de rendimiento.<br> ° Auditoría física y lógica.<br> ° Análisis de capacidad.<br> ° Evaluacion Tecnológica.<br> ° Consultores en sitio / remotos.<br> ° Análisis de interferencias.<br> ° Reportes especializados.<br> ° Pruebas de funcionalidades.<br> ° Entrenamiento.</p>
+                  <p> ° Auditoría de red y procesos.<br> ° Análisis de rendimiento.<br> ° Auditoría física y lógica.<br> ° Análisis de capacidad.<br> ° Evaluación Tecnológica.<br> ° Consultores en sitio / remotos.<br> ° Análisis de interferencias.<br> ° Reportes especializados.<br> ° Pruebas de funcionalidades.<br> ° Entrenamiento.</p>
                 </div>
               </div>
             </a>
@@ -161,40 +184,65 @@
 
 
       
-
-
-      <div class="contenedor" id="funciones">
-        <h1 class="titulo">Funciones</h1>
-        <p class="parrafo">Somos una empresa con gran variedad de funciones y muy expertos en el sector de telecomunicaciones, lo cual nos permite ofrecer:</p>
-        <div class="cuadros">
-            <div class="cuadro">
-                <img src="images/content (1) (2).jpg" alt="Imagen 1">
-                <h3>Ingeniería</h3>
-                <p>Ofrecemos soluciones integrales a través de nuestros servicios de ingeniería de redes y gestión de proyectos, cubriendo cada etapa desde la planificación y diseño hasta la implementación y optimización.</p>
+      <div class="contenedor-xd" id="funciones">
+    <div class="row justify-content-center">
+      <div class="col-md-10">
+        <div class="row">
+          <h1 class="titulo">Funciones</h1>
+          <p class="parrafo">Somos una empresa con gran variedad de funciones y muy expertos en el sector de telecomunicaciones, lo cual nos permite ofrecer:</p>
+          <div class="col-md-3">
+            <div class="card mb-4">
+              <img src="images/content (1) (2).jpg" class="card-img-top" alt="">
+              <div class="card-body">
+                <h5 class="card-title">Ingeniería</h5>
+                <p class="card-text">Ofrecemos soluciones integrales a través de nuestros servicios de ingeniería de redes y gestión de proyectos, cubriendo cada etapa desde la planificación y diseño hasta la implementación y optimización.</p>
+                <a href="funciones/funciones-ingeneria.html" class="btn btn-primary">Más Información</a>
+              </div>
             </div>
-            <div class="cuadro">
-                <img src="images/sesion funciones.jpg" alt="Imagen 2">
-                <h3>Suministro</h3>
-                <p>Suministramos productos de ingeniería adaptados a las necesidades del mercado de las telecomunicaciones mediante la distribución de reconocidas marcas a nivel mundial.</p>
+          </div>
+          <div class="col-md-3">
+            <div class="card mb-4">
+              <img src="images/sesion funciones.jpg" class="card-img-top" alt="">
+              <div class="card-body">
+                <h5 class="card-title">Suministro</h5>
+                <p class="card-text">Suministramos productos de ingeniería adaptados a las necesidades del mercado de las telecomunicaciones mediante la distribución de reconocidas marcas a nivel mundial.</p>
+                <a href="funciones/funcion-suministro.html" class="btn btn-primary">Más Información</a>
+              </div>
             </div>
-            <div class="cuadro">
-                <img src="images/sesion funciones 1.jpg" alt="Imagen 3">
-                <h3>Innovación</h3>
-                <p>Diseñamos sistemas que permiten crear, conectar y gestionar eficientemente sus activos y procesos. Integrando equipos y servicios, ofrecemos soluciones personalizadas a medida de sus necesidades.</p>
+          </div>
+          <div class="col-md-3">
+            <div class="card mb-4">
+              <img src="images/sesion funciones 1.jpg" class="card-img-top" alt="">
+              <div class="card-body">
+                <h5 class="card-title">Innovación</h5>
+                <p class="card-text">Diseñamos sistemas que permiten crear, conectar y gestionar eficientemente sus activos y procesos. Integrando equipos y servicios, ofrecemos soluciones personalizadas a medida de sus necesidades.</p>
+                <a href="funciones/funciones-innovacion.html" class="btn btn-primary">Más Información</a>
+              </div>
             </div>
-            <div class="cuadro">
-                <img src="images/sesion funciones 2.jpg" alt="Imagen 4">
-                <h3>Talento</h3>
-                <p>Unimos necesidades y oportunidades con talento y habilidades que potencian la eficiencia de los procesos, cumpliendo con los estándares de la industria.</p>
+          </div>
+          <div class="col-md-3">
+            <div class="card mb-4">
+              <img src="images/sesion funciones 2.jpg" class="card-img-top" alt="">
+              <div class="card-body">
+                <h5 class="card-title">Talento</h5>
+                <p class="card-text">Unimos necesidades y oportunidades con talento y habilidades que potencian la eficiencia de los procesos, cumpliendo con los estándares de la industria.</p>
+                <a href="funciones/funcion-talento.html" class="btn btn-primary">Más Información</a>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </div>
+  </div>
+
+
+      
     
 
       <div class="inner-image">
         <div class="inner-image-content">
           <div class="inner-image-text">
-            <span>Ofrecemos un gran servicio de innovacion y conectividad</span>
+            <span>Ofrecemos un gran servicio de innovación y conectividad</span>
             <h1>Teamco, como proveedor de soluciones inalámbricas, ofrece recursos de personal con la ayuda de una herramienta interna de mapeo de habilidades para cumplir con los requisitos con el mejor talento de la industria en todas las tecnologías existentes y avanzadas del mercado.</h1>
           </div>
         </div>
@@ -204,7 +252,7 @@
           <div class="about-content-section">
             <div class="about-text">
               <h1><br>Talento Humano</h1>
-              <p>Contamos con una cartera variada de servicios de ingeniería, desarrollo de productos, relaciones y acceso de OEM, estructuración de soluciones personalizables y de valor agregado, estamos profundamente involucrados en atraer y hacer crecer al mejor talento de la industria.<br>Team Colombia, fue concebido por una red de consultores expertos en redes móviles y tiene acceso a una amplia base de recursos calificados, experimentados y capacitados en la región.</p>
+              <p>Contamos con una cartera variada de servicios de ingeniería, desarrollo de productos, relaciones y acceso de OEM, estructuración de soluciones personalizables y de valor agregado. Estamos profundamente involucrados en atraer y hacer crecer al mejor talento de la industria.<br>Team Colombia, fue concebido por una red de consultores expertos en redes móviles y tiene acceso a una amplia base de recursos calificados, experimentados y capacitados en la región.</p>
             </div>
             <div class="about-image">
               <img src="images/Equipo.jpeg" alt="about">
@@ -282,11 +330,11 @@
 
       <div class="container-xd">
         <div>
-            <div class="title">Conocer nuestros proveedores:</div>
+            <div class="title">Conoce a nuestros proveedores:</div>
             <a href="pagina-de-proveedores.html" target="_blank"><button class="button appear"   onclick="">Ver proveedores</button></a>
         </div>
         <div>
-            <div class="title">Conoce nuestros clientes:</div>
+            <div class="title">Conoce a nuestros clientes:</div>
             <a href="pagina-de-clientes.html" target="_blank"><button class="button appear" onclick="">Ver clientes</button></a>
         </div>
     </div><br><br><br>
@@ -300,8 +348,8 @@
           <label for="name">Nombre</label>
           <input type="text" name="name" id="name">
 
-          <label for="email">Correo electronico</label>
-          <input type="email" name="email" id="emailb">
+          <label for="email">Correo electrónico</label>
+          <input type="email" name="email" id="email">
 
           <label for="subject">Asunto</label>
           <input type="text" name="subject" id="subject">
@@ -333,35 +381,42 @@
           </ul>
         </div>
         <div class="footer-col" id="contact">
-          <h4>Contactanos.</h4>
+          <h4>Contáctanos</h4>
           <ul>
-            <li><i class="fas fa-map-marker-alt"></i><a href="https://maps.app.goo.gl/pBq2scvnEc9QknZTA"  target="_blank">Sede Bogotá</a></li>
-            <li><i class="fas fa-map-marker-alt"></i><a href="https://maps.app.goo.gl/myTC1ft2gdJyfqQk9"  target="_blank">Sede Cali</a></li>
+            <li><i class="fas fa-map-marker-alt"></i><a href="https://maps.app.goo.gl/pBq2scvnEc9QknZTA" target="_blank">Sede Bogotá</a></li>
+            <li><i class="fas fa-map-marker-alt"></i><a href="https://maps.app.goo.gl/myTC1ft2gdJyfqQk9" target="_blank">Sede Cali</a></li>
             <li><i class="fas fa-phone-alt"></i><a href="tel:+573117815228" target="_blank">(+57)3117815228</a></li>
             <li><i class="far fa-envelope"></i><a href="mailto:leonardo.quilaguy@teamco.com.co" target="_blank">leonardo.quilaguy@teamco.com.co</a></li>
           </ul>
         </div>
         <div class="footer-col">
-          <h4>Escríbenos.</h4>
+          <h4>Escríbenos</h4>
           <div class="social-links">
             <a href="https://wa.me/573117815228" target="_blank">
               <i class="fa-brands fa-whatsapp fa-2xl" style="color: #1fd690;"></i>
             </a>
           </div>
+          <div class="social-links">
+            <ul>
+              <li><i class="fa-regular fa-clock" style="color: #000000;"></i>
+                <p style="height: 11px;">Horario de atención: <br>
+                   Lunes a Sábados de 8:00 a.m a 5:00 p.m <br>
+                   (Jornada continua)
+                </p>
+              </li>
+            </ul>
+          </div>
         </div>
-
-
-        <div class="footer-col">
-          <img src="images/Logo con fondo.png" alt="Logo de la empresa" id="logo-footer">
+        <div class="footer-col"><br>
+          <img src="images/Imagen1.png" alt="Logo de la empresa" id="logo-footer">
         </div>
-        <script>
-          document.getElementById('logo-footer').addEventListener('click', function() {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-          });
-          </script>
-
-      </div> 
-
+      </div>
+    
+      <script>
+        document.getElementById('logo-footer').addEventListener('click', function() {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+      </script>
     </footer>
     
     <script src="index.js"></script>
